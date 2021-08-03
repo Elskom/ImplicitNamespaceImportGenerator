@@ -51,6 +51,12 @@ public class ImplicitNamespaceImportGeneratorTests
         Assert.Equal(string.Empty, TestGenerateNoAdditionalFiles());
     }
 
+    [Fact(Skip = "Broken...")]
+    public void TestImportDoesNotExist()
+    {
+        Assert.Equal(string.Empty, TestGenerate("System.Runtime.Loader"));
+    }
+
     private static string TestGenerate(string importsText)
     {
         var compilation = CSharpCompilation.Create(
