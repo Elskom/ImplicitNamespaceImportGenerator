@@ -1,0 +1,8 @@
+<Project>
+
+  <ItemGroup>
+    <None Remove="Imports.txt" Condition="Exists('Imports.txt')" />
+    <AdditionalFiles Include="Imports.txt" Condition="Exists('Imports.txt')" />
+  </ItemGroup>
+
+</Project>

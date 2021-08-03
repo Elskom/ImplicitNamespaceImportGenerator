@@ -1,0 +1,10 @@
+<Project>
+
+  <PropertyGroup>
+    <!--
+        This generator replaces the one shipped with the .NET SDK due to the fact that it has issues.
+    -->
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+  </PropertyGroup>
+
+</Project>

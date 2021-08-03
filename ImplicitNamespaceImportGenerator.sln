@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16B8C686-8808-4F1D-8230-9336DF1CEE0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FB87F757-5605-4655-8C88-9F3F4FC849A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitNamespaceImportGenerator", "src\ImplicitNamespaceImportGenerator\ImplicitNamespaceImportGenerator.csproj", "{903A1EA1-C230-4E49-987C-C1AF943B5B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitNamespaceImportGenerator.Tests", "tests\ImplicitNamespaceImportGenerator.Tests.csproj", "{5C8DE8BB-A4D7-4FAC-9219-504AA56629E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F02B505B-2E8C-435E-B108-5A24ABC48B99}"
+ProjectSection(SolutionItems) = preProject
+	tools\install.ps1 = tools\install.ps1
+	tools\uninstall.ps1 = tools\uninstall.ps1
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{62A7685F-1BD9-4BA1-98F6-EE8BF9E658B8}"
+ProjectSection(SolutionItems) = preProject
+	build\ImplicitNamespaceImportGenerator.props = build\ImplicitNamespaceImportGenerator.props
+	build\ImplicitNamespaceImportGenerator.targets = build\ImplicitNamespaceImportGenerator.targets
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{903A1EA1-C230-4E49-987C-C1AF943B5B13} = {16B8C686-8808-4F1D-8230-9336DF1CEE0B}
+		{5C8DE8BB-A4D7-4FAC-9219-504AA56629E5} = {FB87F757-5605-4655-8C88-9F3F4FC849A1}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903A1EA1-C230-4E49-987C-C1AF943B5B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903A1EA1-C230-4E49-987C-C1AF943B5B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903A1EA1-C230-4E49-987C-C1AF943B5B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903A1EA1-C230-4E49-987C-C1AF943B5B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8DE8BB-A4D7-4FAC-9219-504AA56629E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8DE8BB-A4D7-4FAC-9219-504AA56629E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8DE8BB-A4D7-4FAC-9219-504AA56629E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8DE8BB-A4D7-4FAC-9219-504AA56629E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ImplicitNamespaceImportGenerator</id>
+    <version>$version$</version>
+    <authors>Els_kom org.</authors>
+    <developmentDependency>true</developmentDependency>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/Elskom/ImplicitNamespaceImportGenerator</projectUrl>
+    <description>Source Generator for generating the implicit global namespace imports.</description>
+    <releaseNotes>$PackageReleaseNotes$</releaseNotes>
+    <copyright>Copyright (c) 2021</copyright>
+    <repository type="git" url="https://github.com/Elskom/ImplicitNamespaceImportGenerator.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="$BaseOutputPath$ImplicitNamespaceImportGenerator.dll" target="analyzers\cs\ImplicitNamespaceImportGenerator.dll" />
+    <file src="$BaseOutputPath$Microsoft.CodeAnalysis.dll" target="analyzers\cs\Microsoft.CodeAnalysis.dll" />
+    <file src="$BaseOutputPath$cs\**" target="analyzers\cs\cs\" />
+    <file src="$BaseOutputPath$de\**" target="analyzers\cs\de\" />
+    <file src="$BaseOutputPath$es\**" target="analyzers\cs\es\" />
+    <file src="$BaseOutputPath$fr\**" target="analyzers\cs\fr\" />
+    <file src="$BaseOutputPath$it\**" target="analyzers\cs\it\" />
+    <file src="$BaseOutputPath$ja\**" target="analyzers\cs\ja\" />
+    <file src="$BaseOutputPath$ko\**" target="analyzers\cs\ko\" />
+    <file src="$BaseOutputPath$pl\**" target="analyzers\cs\pl\" />
+    <file src="$BaseOutputPath$pt-BR\**" target="analyzers\cs\pt-BR\" />
+    <file src="$BaseOutputPath$ru\**" target="analyzers\cs\ru\" />
+    <file src="$BaseOutputPath$tr\**" target="analyzers\cs\tr\" />
+    <file src="$BaseOutputPath$zh-Hans\**" target="analyzers\cs\zh-Hans\" />
+    <file src="$BaseOutputPath$zh-Hant\**" target="analyzers\cs\zh-Hant\" />
+    <file src="..\..\build\**" target="build\" />
+    <file src="..\..\tools\**" target="tools\" />
+  </files>
+</package>
